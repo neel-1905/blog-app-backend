@@ -7,11 +7,7 @@ const userRoute = require("./routes/users");
 const blogRoute = require("./routes/blogs");
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 app.use("/users", userRoute);
 app.use("/blogs", blogRoute);
