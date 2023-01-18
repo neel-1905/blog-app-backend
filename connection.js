@@ -5,7 +5,7 @@ dotenv.config();
 
 const connection = async () => {
   const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.abtfoeg.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`
+    `mongodb+srv://neel1905:neel1905@cluster0.abtfoeg.mongodb.net/Blogs?retryWrites=true&w=majority`
   );
   const db = client.db();
 
