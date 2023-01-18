@@ -9,7 +9,7 @@ const blogRoute = require("./routes/blogs");
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://blogging-app-project.netlify.app",
+    origin: "https://blogging-app-project.netlify.app/",
   })
 );
 
